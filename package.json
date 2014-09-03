@@ -1,6 +1,6 @@
 {
   "name": "duo-less",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A duo plugin for using the LESS CSS preprocessor",
   "keywords": [
     "duo",
@@ -14,10 +14,9 @@
   },
   "devDependencies": {
     "duo": "^0.8.2",
-    "gnode": "0.0.8",
     "mocha": "^1.21.4"
   },
   "scripts": {
-    "test": "gnode ./node_modules/.bin/_mocha"
+    "test": "mocha"
   }
 }
