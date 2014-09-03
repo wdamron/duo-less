@@ -1,0 +1,10 @@
+{
+  "example.less": {
+    "id": "example.less",
+    "type": "css",
+    "mtime": 1409702048000,
+    "src": ".box {\n  color: #fe33ac;\n  border-color: #fdcdea;\n}\n.box div {\n  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);\n}\n",
+    "deps": {},
+    "entry": true
+  }
+}

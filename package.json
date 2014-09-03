@@ -1,0 +1,22 @@
+{
+  "name": "duo-less",
+  "version": "0.0.1",
+  "description": "A duo plugin for using the LESS CSS preprocessor",
+  "keywords": [
+    "duo",
+    "less",
+    "plugin"
+  ],
+  "dependencies": {
+    "debug": "^2.0.0",
+    "extend": "~1.3.0",
+    "less": "~1.7.4"
+  },
+  "devDependencies": {
+    "duo": "^0.8.2",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
