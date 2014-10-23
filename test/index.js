@@ -8,11 +8,11 @@ var fixture = path.join.bind(path, __dirname, "fixtures");
 
 describe("duo-less", function () {
     it("should be a function", function () {
-        assert(typeof less === "function");
+        assert.equal(typeof less, "function");
     });
 
     it("should return a function", function () {
-        assert(typeof less() === "function");
+        assert.equal(typeof less(), "function");
     });
 
     it("should render LESS into CSS", function (done) {
@@ -24,12 +24,12 @@ describe("duo-less", function () {
 
         duo.run(function (err, file) {
             if (err) return done(err);
-            assert(file === read(fixture("example.css"), "utf8"));
+            assert.equal(file, read(fixture("example.css"), "utf8"));
             done();
         });
     });
 
-    it("should ignore any file that's not .less", function () {
+    it("should ignore any file that's not .less", function (done) {
         var root = fixture();
 
         var duo = new Duo(root)
@@ -38,7 +38,7 @@ describe("duo-less", function () {
 
         duo.run(function (err, file) {
             if (err) return done(err);
-            assert(file === read(fixture("example.css"), "utf8"));
+            assert.equal(file, read(fixture("example.css"), "utf8"));
             done();
         });
     });
