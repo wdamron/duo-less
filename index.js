@@ -13,10 +13,7 @@ var util = require("util");
  */
 module.exports = function (opts) {
     return function duoless(file, duo, done) {
-        if (file.type !== "less") {
-          done();
-          return;
-        }
+        if (file.type !== "less") return done();
 
         debug("compiling %s to css", file.id);
 
