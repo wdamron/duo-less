@@ -10,7 +10,7 @@
   "dependencies": {
     "debug": "^2.0.0",
     "extend": "~1.3.0",
-    "less": "~1.7.4"
+    "less": "~2.0.0"
   },
   "devDependencies": {
     "duo": "^0.8.2",
