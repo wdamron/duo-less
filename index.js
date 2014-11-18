@@ -19,12 +19,12 @@ module.exports = function (opts) {
 
         var options = extend({ filename: file.path }, opts);
 
-        less.render(file.src, options, function (err, css) {
+        less.render(file.src, options, function (err, output) {
             if (err) {
                 debug("error: %s", consoleError(err));
                 done(duoError(err));
             } else {
-                file.src = css;
+                file.src = output.css;
                 file.type = "css";
 
                 done(null, file);
